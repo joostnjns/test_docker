@@ -1,0 +1,11 @@
+version: "2.4"
+services:
+  printer:
+    build: .
+    command: python first_script.py --print_string blablabla
+
+  multiplier:
+    build: .
+    command: python first_script.py --param 100
+
+
